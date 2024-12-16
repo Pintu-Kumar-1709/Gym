@@ -1,0 +1,1014 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('https://your-gym-image-url.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Overlay for better text visibility */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+/* Main Title */
+.main-title {
+    font-family: 'Roboto', sans-serif; /* Bold and striking font */
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Sub Title */
+.sub-title {
+    font-family: 'Poppins', sans-serif; /* Light and modern font */
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.cta-button {
+    font-family: 'Montserrat', sans-serif; /* Balanced font for call to action */
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4757;
+    cursor: pointer;
+}
+
+/* About Us Section Styles */
+.about-us-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-us-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.about-us-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+    }
+
+    .about-us-text, .about-us-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: #ff6b6b;
+}
+
+/* Features Grid */
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Feature Item */
+.feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Feature Item */
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Feature Icon */
+.feature-icon {
+    margin-bottom: 15px;
+}
+
+.feature-icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+
+/* Feature Title */
+.feature-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Feature Description */
+.feature-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%;
+    }
+}
+
+/* Class Schedule Section */
+.schedule-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.schedule-table th, .schedule-table td {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.schedule-table th {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.schedule-table td {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Alternate Row Background */
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .schedule-table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .schedule-table th, .schedule-table td {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Trainers Section Styles */
+.trainers-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.trainers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+/* Trainers Grid */
+.trainers-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Trainer Item */
+.trainer-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Trainer Item */
+.trainer-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Trainer Image */
+.trainer-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid orangered;
+}
+
+/* Trainer Name */
+.trainer-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Trainer Role */
+.trainer-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+/* Trainer Bio */
+.trainer-bio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trainers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainer-item {
+        width: 90%;
+    }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Testimonial Item */
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Testimonial Item */
+.testimonial-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Testimonial Image */
+.testimonial-img-container {
+    margin-bottom: 15px;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid orangered;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Testimonial Role */
+.testimonial-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        width: 90%;
+    }
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Pricing Item */
+.pricing-item {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Highlight the Popular Plan */
+.popular-plan {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+/* Pricing Title */
+.pricing-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+/* Pricing Price */
+.pricing-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: inherit;
+}
+
+.pricing-price .currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.pricing-price .duration {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Pricing Features List */
+.pricing-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-features li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: inherit;
+}
+
+/* Pricing Button */
+.pricing-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pricing-btn:hover {
+    background-color: #e55555;
+}
+
+/* Hover Effect for Pricing Item */
+.pricing-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Highlight Popular Plan on Hover */
+.popular-plan:hover {
+    background-color: #ff5050;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-item {
+        width: 90%;
+    }
+}
+
+/* Promotions Section */
+.promotions-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.promotions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Promotions Grid */
+.promotions-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Promotion Item */
+.promotion-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Promotion Item */
+.promotion-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Promotion Title */
+.promotion-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+/* Promotion Details */
+.promotion-details {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Promotion Expiry */
+.promotion-expiry {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Promotion Button */
+.promotion-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.promotion-btn:hover {
+    background-color: #e55555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .promotions-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotion-item {
+        width: 90%;
+    }
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Gallery Item */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Image */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 3.5px solid orangered;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        border-radius: 8px;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Section Description */
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* FAQ Item */
+.faq-item {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* FAQ Question */
+.faq-question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ff6b6b;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Hover Effect for FAQ Item */
+.faq-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 0 10px;
+    }
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Footer Info */
+.footer-info {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+.footer-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Footer Links */
+.footer-links {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin: 5px 0;
+}
+
+.footer-list a {
+    color: #ccc; 
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: #ff6b6b;
+}
+
+/* Footer Contact */
+.footer-contact {
+    flex: 1;
+    margin: 20px;
+}
+.footer-contact a {
+    color: #e3c793;
+}
+
+/* Footer Social */
+.footer-social {
+    flex: 1;
+    margin: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 20px 0;
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
